@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noche de Terror · 31 de Octubre</title>
+  <meta name="description" content="Estás invitado a una maratón de películas de terror hasta el amanecer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Efectos de fondo -->
+  <div class="niebla"></div>
+  <div class="niebla niebla-2"></div>
+  <div class="relampago" id="relampago"></div>
+  <canvas id="murcielagos"></canvas>
+  <div class="grano"></div>
+
+  <!-- Pantalla de entrada -->
+  <div class="portada" id="portada">
+    <div class="luna"></div>
+    <p class="portada-pre">Alguien te dejó esto en la puerta...</p>
+    <button class="btn-entrar" id="btnEntrar">Abrir la invitación</button>
+  </div>
+
+  <main class="contenido" id="contenido">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="luna luna-grande"></div>
+      <p class="sobretitulo">Estás invitado a</p>
+      <h1 class="titulo glitch" data-text="Noche de Terror">Noche de Terror</h1>
+      <p class="subtitulo">Maratón de películas de terror hasta el otro día</p>
+      <p class="fecha-grande">30 de Octubre <span>→</span> 31 de Octubre</p>
+      <div class="sangre"></div>
+    </header>
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="seccion">
+      <h2>La noche se acerca...</h2>
+      <div class="cuenta" id="cuenta">
+        <div class="caja"><span id="dias">00</span><small>días</small></div>
+        <div class="caja"><span id="horas">00</span><small>horas</small></div>
+        <div class="caja"><span id="minutos">00</span><small>min</small></div>
+        <div class="caja"><span id="segundos">00</span><small>seg</small></div>
+      </div>
+      <p class="mensaje-cuenta" id="mensajeCuenta"></p>
+    </section>
+
+    <!-- DETALLES -->
+    <section class="seccion">
+      <h2>Los detalles</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <div class="icono">🌕</div>
+          <h3>Cuándo</h3>
+          <p>Del 30 al 31 de octubre</p>
+          <p class="chico">Viernes y sábado</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono">🏚️</div>
+          <h3>Dónde</h3>
+          <p>En los Hampton</p>
+          <p class="chico">Nuestro refugio para la noche</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono">🖤</div>
+          <h3>Qué llevar</h3>
+          <p>Tu hermosa existencia</p>
+          <p class="chico">Lo demás ya está listo</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- AL GUSTO DE AMBOS -->
+    <section class="seccion">
+      <h2>Al gusto de ambos</h2>
+      <p class="intro">Las películas las escogemos juntos, así que nadie se queda sin su favorita.</p>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <div class="icono">🔪</div>
+          <h3>La que tú eliges</h3>
+          <p>Tu favorita de terror</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono">👻</div>
+          <h3>La que yo elijo</h3>
+          <p>La mía, sin quejas</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono">🎲</div>
+          <h3>La sorpresa</h3>
+          <p>Una que ninguno ha visto</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="pie">
+      <p>Nos vemos en la oscuridad 🦇</p>
+      <p class="chico">Hecho con sangre, sudor y VS Code</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
